@@ -171,7 +171,7 @@ public class MyLogger {
     }
     
     
-    func getLogFilePath(date: String) -> String {
+    public func getLogFilePath(date: String) -> String {
         do {
             let file = logName + "_" + date + ".log"
             
