@@ -26,6 +26,7 @@ public class MyLogger {
     public init(level: LogLevel, name: String = "default") {
         logLevel = level
         logName = name
+        print("log path is \(String(describing: self.getLogPath()))")
     }
     
     
@@ -130,7 +131,6 @@ public class MyLogger {
             }
             
             let path = directory.appendingPathComponent(file).path
-            print("log path is \(path)")
             return path
 
         } catch {
